@@ -32,7 +32,7 @@ const Polling = () => {
     }, 10000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [page]);
 
   return (
     <div>
@@ -52,7 +52,7 @@ const Polling = () => {
               <tr key={index}>
                 <td>{post.title}</td>
                 <td>
-                  <a href={post.url} target="_blank">
+                  <a href={post.url} target="_blank" without rel="noreferrer">
                     {post.url}
                   </a>
                 </td>
